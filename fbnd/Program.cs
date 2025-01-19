@@ -194,7 +194,7 @@ createRspCommand.SetHandler((FileInfo rspOutput) =>
     var removeEmptyLinesInput = Console.ReadLine()?.ToLower() == "true";
 
     // Construct the command
-    var rspCommand = $"fbnd --language {languages} --output {output} --note {noteInput} --sort {sort} --remove-empty-lines {removeEmptyLinesInput}";
+    var rspCommand = $"bundle --language {languages} --output {output} --note {noteInput} --sort {sort} --remove-empty-lines {removeEmptyLinesInput}";
     if (!string.IsNullOrEmpty(author))
     {
         rspCommand += $" --author \"{author}\"";
